@@ -24,7 +24,7 @@ app.post("/send-email", (req, res) => {
 
     t2.sendMail(
       {
-        from: `"Correo de Confirmación" <${process.env.EMAIL}>`,
+        from: `"Correo de Confirmación 📧🎉" <${process.env.EMAIL}>`,
         to: String(email),
         subject: "Tu correo a sido recibido con éxito",
         text: `Hola ${name}, te informamos que tu correo que nos mandaste esta siendo revisado por lo que te pedimos paciencia. Esto puede tardar de 24hrs a 48hrs en ser contestado por nuestro equipo.`,
@@ -49,7 +49,7 @@ app.post("/send-email", (req, res) => {
 
   t1.sendMail(
     {
-      from: `"Nuevo Cliente 👀🍾" <${process.env.Email}>`,
+      from: `"Nuevo Cliente 👀🎉" <${process.env.Email}>`,
       to: process.env.EMAIL_SEND,
       subject: "Un nuevo cliente a solicitado nuestros servicios",
       html: `
