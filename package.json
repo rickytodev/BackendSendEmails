@@ -1,0 +1,30 @@
+{
+  "name": "send-emails-whit-nodemailer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "type": "module",
+  "description": "The is example for send emails whit form the portfolio",
+  "author": "Ricardo Vega G",
+  "private": false,
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.21.0",
+    "nodemailer": "6.9.15"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "4.17.21",
+    "@types/nodemailer": "6.4.15",
+    "nodemon": "3.1.4",
+    "typescript": "5.6.2"
+  },
+  "scripts": {
+    "types": "tsc -w",
+    "server": "nodemon main.js",
+    "build": "tsc && node main.js",
+    "render": "npm install && npm run tsc && node main.js"
+  },
+  "packageManager": "yarn@1.22.22"
+}
